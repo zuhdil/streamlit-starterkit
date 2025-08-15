@@ -261,6 +261,52 @@ streamlit run app.py
 ./deploy.sh  # Redeploys automatically
 ```
 
+## For Existing Projects
+
+If you already have a Streamlit app and want to add Cloud Run deployment:
+
+### Integration Script (Recommended)
+
+Run this command from within your existing Streamlit project directory:
+
+```bash
+# Navigate to your existing Streamlit project first
+cd your-existing-streamlit-project
+
+# Then run the integration script
+curl -sL https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/integrate_deployment.sh | bash
+```
+
+This script will:
+- **Auto-detect** your main Streamlit file (app.py, main.py, etc.)
+- **Download** deployment files (deploy.sh, deploy.env, Dockerfile)
+- **Adapt** Dockerfile to your project structure
+- **Configure** your GCP settings interactively
+- **Backup** existing files before making changes
+
+### Manual Integration
+
+1. **Copy deployment files** to your project:
+   ```bash
+   wget https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/templates/deploy.sh
+   wget https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/templates/deploy.env
+   wget https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/templates/Dockerfile
+   ```
+
+2. **Make executable and configure**:
+   ```bash
+   chmod +x deploy.sh
+   nano deploy.env  # Set your PROJECT_ID and REGION
+   ```
+
+3. **Update Dockerfile** if your main file isn't `app.py`:
+   ```dockerfile
+   # Change this line in Dockerfile
+   CMD ["streamlit", "run", "your-main-file.py", "--server.port=8080", ...]
+   ```
+
+4. **Deploy**: `./deploy.sh`
+
 ## Contributing
 
 1. Fork the repository
