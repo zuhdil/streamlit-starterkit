@@ -27,6 +27,16 @@ git clone --depth 1 "$REPO_URL" "$TEMP_DIR" 2>/dev/null || {
 cd "$TEMP_DIR"
 ./setup_app.sh
 
+# Move created project to current directory before cleanup
+# Find the created directory (exclude the templates and script files)
+for dir in */; do
+    if [ "$dir" != "templates/" ] && [ -d "$dir" ]; then
+        PROJECT_DIR="${dir%/}"
+        mv "$PROJECT_DIR" "$OLDPWD/"
+        break
+    fi
+done
+
 # Cleanup - Remove the temporary directory after scaffolding
 rm -rf "$TEMP_DIR"
 
