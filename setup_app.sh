@@ -39,7 +39,7 @@ if [ ! -d "$TEMPLATES_DIR" ]; then
 fi
 
 # Prompt for application name
-read -p "Enter your application name (e.g., 'My Analysis App'): " app_name
+read -p "Enter your application name (e.g., 'My Analysis App'): " app_name < /dev/tty
 
 if [ -z "$app_name" ]; then
     echo "Error: Application name cannot be empty."
