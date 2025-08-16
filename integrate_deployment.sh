@@ -3,7 +3,7 @@
 set -e
 
 # Integration script for adding streamlit-starterkit deployment to existing projects
-REPO_URL="https://raw.githubusercontent.com/your-org/streamlit-starterkit/main/templates"
+REPO_URL="https://raw.githubusercontent.com/zuhdil/streamlit-starterkit/main/templates"
 
 echo "=== Streamlit Deployment Integration ==="
 echo "This script will add Cloud Run deployment capability to your existing Streamlit project."
@@ -220,4 +220,4 @@ echo "   - deploy.env (configuration)"
 echo "   - Dockerfile (container config)"
 echo
 echo "For troubleshooting, visit:"
-echo "   https://github.com/your-org/streamlit-starterkit"
+echo "   https://github.com/zuhdil/streamlit-starterkit"

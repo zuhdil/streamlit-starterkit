@@ -1,6 +1,6 @@
 # {{APP_NAME}}
 
-A Streamlit application built with the [Streamlit Starter Kit](https://github.com/your-username/streamlit-starterkit).
+A Streamlit application built with the [Streamlit Starter Kit](https://github.com/zuhdil/streamlit-starterkit).
 
 ## Quick Start
 
@@ -277,7 +277,7 @@ The included `.gitignore` file ensures sensitive files and temporary files are n
 
 - **Streamlit Documentation**: [docs.streamlit.io](https://docs.streamlit.io/)
 - **Google Cloud Run Documentation**: [cloud.google.com/run/docs](https://cloud.google.com/run/docs)
-- **Starter Kit Issues**: [GitHub Issues](https://github.com/your-username/streamlit-starterkit/issues)
+- **Starter Kit Issues**: [GitHub Issues](https://github.com/zuhdil/streamlit-starterkit/issues)
 
 ## Contributing
 

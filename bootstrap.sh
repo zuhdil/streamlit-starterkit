@@ -3,7 +3,7 @@
 set -e
 
 # Repository configuration
-REPO_URL="https://github.com/your-username/streamlit-starterkit.git"  # REPLACE WITH YOUR ACTUAL REPO URL
+REPO_URL="https://github.com/zuhdil/streamlit-starterkit.git"
 TEMP_DIR="/tmp/streamlit-starterkit-$$"
 
 echo "=== Streamlit App Bootstrap ==="

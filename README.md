@@ -20,10 +20,10 @@ Create a new Streamlit app without cloning this repository:
 
 ```bash
 # Using curl
-curl -sL https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/bootstrap.sh | bash
+curl -sL https://raw.githubusercontent.com/zuhdil/streamlit-starterkit/main/bootstrap.sh | bash
 
 # Using wget
-wget -qO- https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/bootstrap.sh | bash
+wget -qO- https://raw.githubusercontent.com/zuhdil/streamlit-starterkit/main/bootstrap.sh | bash
 ```
 
 ### Local Setup
@@ -274,7 +274,7 @@ Run this command from within your existing Streamlit project directory:
 cd your-existing-streamlit-project
 
 # Then run the integration script
-curl -sL https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/integrate_deployment.sh | bash
+curl -sL https://raw.githubusercontent.com/zuhdil/streamlit-starterkit/main/integrate_deployment.sh | bash
 ```
 
 This script will:
@@ -288,9 +288,9 @@ This script will:
 
 1. **Copy deployment files** to your project:
    ```bash
-   wget https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/templates/deploy.sh
-   wget https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/templates/deploy.env
-   wget https://raw.githubusercontent.com/your-username/streamlit-starterkit/main/templates/Dockerfile
+   wget https://raw.githubusercontent.com/zuhdil/streamlit-starterkit/main/templates/deploy.sh
+   wget https://raw.githubusercontent.com/zuhdil/streamlit-starterkit/main/templates/deploy.env
+   wget https://raw.githubusercontent.com/zuhdil/streamlit-starterkit/main/templates/Dockerfile
    ```
 
 2. **Make executable and configure**:

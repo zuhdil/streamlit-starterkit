@@ -58,7 +58,7 @@ The intended end-to-end process:
 
 **Remote bootstrap** (single command via curl):
 ```bash
-curl -sL https://raw.githubusercontent.com/your-org/streamlit-starterkit/main/bootstrap.sh | bash
+curl -sL https://raw.githubusercontent.com/zuhdil/streamlit-starterkit/main/bootstrap.sh | bash
 ```
 
 **Configuration and deployment** after scaffolding:
