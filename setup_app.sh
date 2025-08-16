@@ -92,6 +92,9 @@ cp "$TEMPLATES_DIR/deploy.env" .
 echo "  Copying .gitignore..."
 cp "$TEMPLATES_DIR/.gitignore" .
 
+echo "  Copying .dockerignore..."
+cp "$TEMPLATES_DIR/.dockerignore" .
+
 # Make scripts executable
 chmod +x deploy.sh
 
@@ -106,6 +109,7 @@ echo "   - Dockerfile (Container configuration)"
 echo "   - deploy.sh (Deployment script)"
 echo "   - deploy.env (Deployment configuration - EDIT THIS)"
 echo "   - .gitignore (Git ignore rules)"
+echo "   - .dockerignore (Docker ignore rules)"
 echo
 echo "Next steps:"
 echo "1. cd $normalized_name"

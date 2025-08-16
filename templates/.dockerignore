@@ -1,0 +1,55 @@
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+.env
+
+# Git
+.git/
+.gitignore
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Development files
+README.md
+.dockerignore
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Documentation
+docs/
+*.md
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Data files (customize as needed)
+data/
+*.csv
+*.json
+*.pkl
+*.parquet
+
+# Streamlit cache
+.streamlit/

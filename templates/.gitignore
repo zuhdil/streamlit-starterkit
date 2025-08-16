@@ -169,9 +169,6 @@ Thumbs.db
 ehthumbs.db
 Desktop.ini
 
-# Docker
-.dockerignore
-
 # Streamlit
 .streamlit/
 
